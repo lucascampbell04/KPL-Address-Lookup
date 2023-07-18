@@ -19,7 +19,7 @@ export function initMap() {
     // Load the GeoJSON file
     map.addSource('boundary', {
       type: 'geojson',
-      data: 'assets/boundary.geojson',
+      data: 'https://raw.githubusercontent.com/lucascampbell04/KPL-Address-Lookup/main/assets/boundary.geojson',
     });
 
     map.addLayer({
