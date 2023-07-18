@@ -11,5 +11,5 @@ export default defineConfig({
       build: {
         // Disables the preload.
         modulePreload: false,
-      },
+      }
 });
