@@ -8,4 +8,8 @@ export default defineConfig({
     esm: {
         babelExclude: [],
       },
+      build: {
+        // Disables the preload.
+        modulePreload: false,
+      },
 });
