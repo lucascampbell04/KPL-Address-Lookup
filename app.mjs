@@ -3,7 +3,7 @@ var map;
 var boundary;
 var historyTable;
 var features;
-const apiUrl = import.meta.env.VITE_MAPBOX_API_KEY;
+const apiUrl = 'pk.eyJ1IjoibHVjYXNjYW1wYmVsbCIsImEiOiJjbGs0MnQxcTAwbTU1M2ZtcjA2ZXU0cDZqIn0.frU8JiLhGAEKgzD6qfiHAg';
 export function initMap() {
   // Create a map centered on Kalamazoo, Michigan
   mapboxgl.accessToken = apiUrl;
@@ -85,7 +85,7 @@ export function initMap() {
       // Display failure toast and show the address on the map if outside the boundary
       Toastify({
         text: address + " is not eligible",
-        duration: 3000,
+        duration: 10000,
         gravity: "top", // `top` or `bottom`
         position: "right", // `left`, `center` or `right`
         stopOnFocus: true, // Prevent dismissing of toast on hover
@@ -100,7 +100,7 @@ export function initMap() {
       // Display success toast and show the address on the map if inside the boundary
       Toastify({
         text: address + " is eligible",
-        duration: 3000,
+        duration: 10000,
         gravity: "top", // `top` or `bottom`
         position: "right", // `left`, `center` or `right`
         stopOnFocus: true, // Prevent dismissing of toast on hover
