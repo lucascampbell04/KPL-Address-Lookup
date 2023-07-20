@@ -4,7 +4,7 @@ var boundary;
 var historyTable;
 var features;
 const apiUrl = 'pk.eyJ1IjoibHVjYXNjYW1wYmVsbCIsImEiOiJjbGs0MnQxcTAwbTU1M2ZtcjA2ZXU0cDZqIn0.frU8JiLhGAEKgzD6qfiHAg';
-export function initMap() {
+function initMap() {
 	// Create a map centered on Kalamazoo, Michigan
 	mapboxgl.accessToken = apiUrl;
 	console.log(apiUrl);
