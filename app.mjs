@@ -233,9 +233,9 @@ export function initMap() {
 		var hoverTimeoutPOW = false;
 		var markerPOW = new mapboxgl.Marker({
 			color: 'black'
-		}).setLngLat([-85.59749681192066,
-			42.30384992738545
-		]) // Coordinates for POW branch
+		}).setLngLat([-85.59784993654905,
+			42.303725803292174
+		]).addTo(map); // Coordinates for POW branch
 		var titleElementPOW = document.createElement('div');
 		titleElementPOW.className = 'marker-title';
 		titleElementPOW.textContent = 'POW';
